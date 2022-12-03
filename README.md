@@ -12,9 +12,16 @@ It can be run from any machine, not necessarily
 the Nextcloud server. Sync tokens are used to
 efficiently handle the synchronization.
 
-CAUTION: password for Nextcloud is stored in script file!
+### CAUTION
+
+The password for Nextcloud is stored in the script file!
 As a minimal precaution it is advisable to create an
 app password for this access.
+
+Currently, only the event summary is replaced; 
+any other data is copied from the original event.
+This can easily be changed but I do not have any
+appropriate use case at hand.
 
 ## FILE SYSTEM, USER
 
