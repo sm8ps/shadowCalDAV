@@ -62,7 +62,7 @@ The summary will be replaced by a string in the form of
 BUSY_TEXT, FROM_TO_SEPARATOR are constant strings; add whitespace if desired.
 
 DATE_FORMAT, DATETIME_FORMAT are format codes in 
-[https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes](strftime syntax).
+[strftime syntax](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes).
 
 ## OVERVIEW
 
