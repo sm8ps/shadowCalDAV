@@ -72,11 +72,13 @@ DATE_FORMAT, DATETIME_FORMAT are format codes in
    For each calendar pair of internal and external calendar:
 2) Get sync token from file if possible.
 3) Load all new events from internal calendar as per sync token or all events.
+
    For each such event:
 4) Copy event to external calendar, replacing its summary by
 start/end date/time while keeping its UID. If an event with that
-UID already exists update it accordingly.
+UID already exists update it appropriately.
 5) In case of deleted objects, load all events from external calendar
 and delete the superfluous ones.
+
    For each calendar pair:
 6) Store new sync token.
