@@ -47,7 +47,7 @@ CALDAV_URL, CALDAV_USER, CALDAV_PASSWORD for CalDAV (Nextcloud) server.
 
 TIMEZONE should be specified as None in order to use local instead of universal time.
 
-CALENDARS is a list of airs of "internal" and "external" (= shadow) calendars.
+CALENDARS is a list of pairs of "internal" and "external" (= shadow) calendars.
 
 TREAT_ALL_EVENTS can be used to override the sync token.
 
@@ -68,6 +68,7 @@ DATE_FORMAT, DATETIME_FORMAT are format codes in
 
 0) Sanity check about access permissions of this script file.
 1) Connect to CalDAV root ("principal") on CalDAV (Nextcloud) server.
+
    For each calendar pair of internal and external calendar:
 2) Get sync token from file if possible.
 3) Load all new events from internal calendar as per sync token or all events.
